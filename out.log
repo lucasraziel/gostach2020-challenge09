@@ -1,0 +1,940 @@
+yarn run v1.22.4
+$ cross-env NODE_ENV=test jest
+  console.log
+    Connection {
+      migrations: [
+        CreateCustomers1590447853705 {},
+        CreateOrders1590448174456 {},
+        CreateProducts1590450733786 {},
+        CreateOrderProduct1590451048527 {}
+      ],
+      subscribers: [],
+      entityMetadatas: [
+        EntityMetadata {
+          childEntityMetadatas: [],
+          inheritanceTree: [Array],
+          tableType: 'regular',
+          withoutRowid: false,
+          synchronize: true,
+          hasNonNullableRelations: false,
+          isJunction: false,
+          isClosureJunction: false,
+          hasMultiplePrimaryKeys: false,
+          hasUUIDGeneratedColumns: true,
+          ownColumns: [Array],
+          columns: [Array],
+          ancestorColumns: [],
+          descendantColumns: [],
+          nonVirtualColumns: [Array],
+          ownerColumns: [],
+          inverseColumns: [],
+          generatedColumns: [Array],
+          primaryColumns: [Array],
+          ownRelations: [Array],
+          relations: [Array],
+          eagerRelations: [],
+          lazyRelations: [],
+          oneToOneRelations: [],
+          ownerOneToOneRelations: [],
+          oneToManyRelations: [Array],
+          manyToOneRelations: [],
+          manyToManyRelations: [],
+          ownerManyToManyRelations: [],
+          relationsWithJoinColumns: [],
+          relationIds: [],
+          relationCounts: [],
+          foreignKeys: [],
+          embeddeds: [],
+          allEmbeddeds: [],
+          ownIndices: [],
+          indices: [],
+          uniques: [],
+          ownUniques: [],
+          checks: [],
+          exclusions: [],
+          ownListeners: [],
+          listeners: [],
+          afterLoadListeners: [],
+          beforeInsertListeners: [],
+          afterInsertListeners: [],
+          beforeUpdateListeners: [],
+          afterUpdateListeners: [],
+          beforeRemoveListeners: [],
+          afterRemoveListeners: [],
+          connection: [Circular],
+          inheritancePattern: undefined,
+          treeType: undefined,
+          parentClosureEntityMetadata: undefined,
+          tableMetadataArgs: [Object],
+          target: [Function: Order],
+          expression: undefined,
+          engine: undefined,
+          database: undefined,
+          schema: undefined,
+          givenTableName: 'orders',
+          targetName: 'Order',
+          tableNameWithoutPrefix: 'orders',
+          tableName: 'orders',
+          name: 'Order',
+          tablePath: 'orders',
+          schemaPath: undefined,
+          orderBy: undefined,
+          discriminatorValue: 'Order',
+          treeParentRelation: undefined,
+          treeChildrenRelation: undefined,
+          createDateColumn: [ColumnMetadata],
+          updateDateColumn: [ColumnMetadata],
+          deleteDateColumn: undefined,
+          versionColumn: undefined,
+          discriminatorColumn: undefined,
+          treeLevelColumn: undefined,
+          nestedSetLeftColumn: undefined,
+          nestedSetRightColumn: undefined,
+          materializedPathColumn: undefined,
+          objectIdColumn: undefined,
+          propertiesMap: [Object]
+        },
+        EntityMetadata {
+          childEntityMetadatas: [],
+          inheritanceTree: [Array],
+          tableType: 'regular',
+          withoutRowid: false,
+          synchronize: true,
+          hasNonNullableRelations: false,
+          isJunction: false,
+          isClosureJunction: false,
+          hasMultiplePrimaryKeys: false,
+          hasUUIDGeneratedColumns: true,
+          ownColumns: [Array],
+          columns: [Array],
+          ancestorColumns: [],
+          descendantColumns: [],
+          nonVirtualColumns: [Array],
+          ownerColumns: [],
+          inverseColumns: [],
+          generatedColumns: [Array],
+          primaryColumns: [Array],
+          ownRelations: [Array],
+          relations: [Array],
+          eagerRelations: [],
+          lazyRelations: [],
+          oneToOneRelations: [],
+          ownerOneToOneRelations: [],
+          oneToManyRelations: [],
+          manyToOneRelations: [Array],
+          manyToManyRelations: [],
+          ownerManyToManyRelations: [],
+          relationsWithJoinColumns: [Array],
+          relationIds: [],
+          relationCounts: [],
+          foreignKeys: [Array],
+          embeddeds: [],
+          allEmbeddeds: [],
+          ownIndices: [],
+          indices: [],
+          uniques: [],
+          ownUniques: [],
+          checks: [],
+          exclusions: [],
+          ownListeners: [],
+          listeners: [],
+          afterLoadListeners: [],
+          beforeInsertListeners: [],
+          afterInsertListeners: [],
+          beforeUpdateListeners: [],
+          afterUpdateListeners: [],
+          beforeRemoveListeners: [],
+          afterRemoveListeners: [],
+          connection: [Circular],
+          inheritancePattern: undefined,
+          treeType: undefined,
+          parentClosureEntityMetadata: undefined,
+          tableMetadataArgs: [Object],
+          target: [Function: OrdersProducts],
+          expression: undefined,
+          engine: undefined,
+          database: undefined,
+          schema: undefined,
+          givenTableName: 'orders_products',
+          targetName: 'OrdersProducts',
+          tableNameWithoutPrefix: 'orders_products',
+          tableName: 'orders_products',
+          name: 'OrdersProducts',
+          tablePath: 'orders_products',
+          schemaPath: undefined,
+          orderBy: undefined,
+          discriminatorValue: 'OrdersProducts',
+          treeParentRelation: undefined,
+          treeChildrenRelation: undefined,
+          createDateColumn: [ColumnMetadata],
+          updateDateColumn: [ColumnMetadata],
+          deleteDateColumn: undefined,
+          versionColumn: undefined,
+          discriminatorColumn: undefined,
+          treeLevelColumn: undefined,
+          nestedSetLeftColumn: undefined,
+          nestedSetRightColumn: undefined,
+          materializedPathColumn: undefined,
+          objectIdColumn: undefined,
+          propertiesMap: [Object]
+        },
+        EntityMetadata {
+          childEntityMetadatas: [],
+          inheritanceTree: [Array],
+          tableType: 'regular',
+          withoutRowid: false,
+          synchronize: true,
+          hasNonNullableRelations: false,
+          isJunction: false,
+          isClosureJunction: false,
+          hasMultiplePrimaryKeys: false,
+          hasUUIDGeneratedColumns: true,
+          ownColumns: [Array],
+          columns: [Array],
+          ancestorColumns: [],
+          descendantColumns: [],
+          nonVirtualColumns: [Array],
+          ownerColumns: [],
+          inverseColumns: [],
+          generatedColumns: [Array],
+          primaryColumns: [Array],
+          ownRelations: [Array],
+          relations: [Array],
+          eagerRelations: [],
+          lazyRelations: [],
+          oneToOneRelations: [],
+          ownerOneToOneRelations: [],
+          oneToManyRelations: [Array],
+          manyToOneRelations: [],
+          manyToManyRelations: [],
+          ownerManyToManyRelations: [],
+          relationsWithJoinColumns: [],
+          relationIds: [],
+          relationCounts: [],
+          foreignKeys: [],
+          embeddeds: [],
+          allEmbeddeds: [],
+          ownIndices: [],
+          indices: [],
+          uniques: [],
+          ownUniques: [],
+          checks: [],
+          exclusions: [],
+          ownListeners: [],
+          listeners: [],
+          afterLoadListeners: [],
+          beforeInsertListeners: [],
+          afterInsertListeners: [],
+          beforeUpdateListeners: [],
+          afterUpdateListeners: [],
+          beforeRemoveListeners: [],
+          afterRemoveListeners: [],
+          connection: [Circular],
+          inheritancePattern: undefined,
+          treeType: undefined,
+          parentClosureEntityMetadata: undefined,
+          tableMetadataArgs: [Object],
+          target: [Function: Product],
+          expression: undefined,
+          engine: undefined,
+          database: undefined,
+          schema: undefined,
+          givenTableName: 'products',
+          targetName: 'Product',
+          tableNameWithoutPrefix: 'products',
+          tableName: 'products',
+          name: 'Product',
+          tablePath: 'products',
+          schemaPath: undefined,
+          orderBy: undefined,
+          discriminatorValue: 'Product',
+          treeParentRelation: undefined,
+          treeChildrenRelation: undefined,
+          createDateColumn: [ColumnMetadata],
+          updateDateColumn: [ColumnMetadata],
+          deleteDateColumn: undefined,
+          versionColumn: undefined,
+          discriminatorColumn: undefined,
+          treeLevelColumn: undefined,
+          nestedSetLeftColumn: undefined,
+          nestedSetRightColumn: undefined,
+          materializedPathColumn: undefined,
+          objectIdColumn: undefined,
+          propertiesMap: [Object]
+        },
+        EntityMetadata {
+          childEntityMetadatas: [],
+          inheritanceTree: [Array],
+          tableType: 'regular',
+          withoutRowid: false,
+          synchronize: true,
+          hasNonNullableRelations: false,
+          isJunction: false,
+          isClosureJunction: false,
+          hasMultiplePrimaryKeys: false,
+          hasUUIDGeneratedColumns: true,
+          ownColumns: [Array],
+          columns: [Array],
+          ancestorColumns: [],
+          descendantColumns: [],
+          nonVirtualColumns: [Array],
+          ownerColumns: [],
+          inverseColumns: [],
+          generatedColumns: [Array],
+          primaryColumns: [Array],
+          ownRelations: [],
+          relations: [],
+          eagerRelations: [],
+          lazyRelations: [],
+          oneToOneRelations: [],
+          ownerOneToOneRelations: [],
+          oneToManyRelations: [],
+          manyToOneRelations: [],
+          manyToManyRelations: [],
+          ownerManyToManyRelations: [],
+          relationsWithJoinColumns: [],
+          relationIds: [],
+          relationCounts: [],
+          foreignKeys: [],
+          embeddeds: [],
+          allEmbeddeds: [],
+          ownIndices: [],
+          indices: [],
+          uniques: [],
+          ownUniques: [],
+          checks: [],
+          exclusions: [],
+          ownListeners: [],
+          listeners: [],
+          afterLoadListeners: [],
+          beforeInsertListeners: [],
+          afterInsertListeners: [],
+          beforeUpdateListeners: [],
+          afterUpdateListeners: [],
+          beforeRemoveListeners: [],
+          afterRemoveListeners: [],
+          connection: [Circular],
+          inheritancePattern: undefined,
+          treeType: undefined,
+          parentClosureEntityMetadata: undefined,
+          tableMetadataArgs: [Object],
+          target: [Function: Customer],
+          expression: undefined,
+          engine: undefined,
+          database: undefined,
+          schema: undefined,
+          givenTableName: 'customers',
+          targetName: 'Customer',
+          tableNameWithoutPrefix: 'customers',
+          tableName: 'customers',
+          name: 'Customer',
+          tablePath: 'customers',
+          schemaPath: undefined,
+          orderBy: undefined,
+          discriminatorValue: 'Customer',
+          treeParentRelation: undefined,
+          treeChildrenRelation: undefined,
+          createDateColumn: [ColumnMetadata],
+          updateDateColumn: [ColumnMetadata],
+          deleteDateColumn: undefined,
+          versionColumn: undefined,
+          discriminatorColumn: undefined,
+          treeLevelColumn: undefined,
+          nestedSetLeftColumn: undefined,
+          nestedSetRightColumn: undefined,
+          materializedPathColumn: undefined,
+          objectIdColumn: undefined,
+          propertiesMap: [Object]
+        }
+      ],
+      name: 'test-connection',
+      options: {
+        type: 'postgres',
+        host: 'localhost',
+        port: '5432',
+        username: 'postgres',
+        password: 'docker',
+        database: 'gostack_desafio09_tests',
+        entities: [ './src/modules/**/infra/typeorm/entities/*.ts' ],
+        migrations: [ './src/shared/infra/typeorm/migrations/*.ts' ],
+        cli: { migrationsDir: './src/shared/infra/typeorm/migrations' },
+        name: 'test-connection'
+      },
+      logger: AdvancedConsoleLogger { options: undefined },
+      driver: PostgresDriver {
+        slaves: [],
+        connectedQueryRunners: [],
+        isReplicated: false,
+        treeSupport: true,
+        supportedDataTypes: [
+          'int',
+          'int2',
+          'int4',
+          'int8',
+          'smallint',
+          'integer',
+          'bigint',
+          'decimal',
+          'numeric',
+          'real',
+          'float',
+          'float4',
+          'float8',
+          'double precision',
+          'money',
+          'character varying',
+          'varchar',
+          'character',
+          'char',
+          'text',
+          'citext',
+          'hstore',
+          'bytea',
+          'bit',
+          'varbit',
+          'bit varying',
+          'timetz',
+          'timestamptz',
+          'timestamp',
+          'timestamp without time zone',
+          'timestamp with time zone',
+          'date',
+          'time',
+          'time without time zone',
+          'time with time zone',
+          'interval',
+          'bool',
+          'boolean',
+          'enum',
+          'point',
+          'line',
+          'lseg',
+          'box',
+          'path',
+          'polygon',
+          'circle',
+          'cidr',
+          'inet',
+          'macaddr',
+          'tsvector',
+          'tsquery',
+          'uuid',
+          'xml',
+          'json',
+          'jsonb',
+          'int4range',
+          'int8range',
+          'numrange',
+          'tsrange',
+          'tstzrange',
+          'daterange',
+          'geometry',
+          'geography',
+          'cube'
+        ],
+        spatialTypes: [ 'geometry', 'geography' ],
+        withLengthColumnTypes: [
+          'character varying',
+          'varchar',
+          'character',
+          'char',
+          'bit',
+          'varbit',
+          'bit varying'
+        ],
+        withPrecisionColumnTypes: [
+          'numeric',
+          'decimal',
+          'interval',
+          'time without time zone',
+          'time with time zone',
+          'timestamp without time zone',
+          'timestamp with time zone'
+        ],
+        withScaleColumnTypes: [ 'numeric', 'decimal' ],
+        mappedDataTypes: {
+          createDate: 'timestamp',
+          createDateDefault: 'now()',
+          updateDate: 'timestamp',
+          updateDateDefault: 'now()',
+          deleteDate: 'timestamp',
+          deleteDateNullable: true,
+          version: 'int4',
+          treeLevel: 'int4',
+          migrationId: 'int4',
+          migrationName: 'varchar',
+          migrationTimestamp: 'int8',
+          cacheId: 'int4',
+          cacheIdentifier: 'varchar',
+          cacheTime: 'int8',
+          cacheDuration: 'int4',
+          cacheQuery: 'text',
+          cacheResult: 'text',
+          metadataType: 'varchar',
+          metadataDatabase: 'varchar',
+          metadataSchema: 'varchar',
+          metadataTable: 'varchar',
+          metadataName: 'varchar',
+          metadataValue: 'text'
+        },
+        dataTypeDefaults: {
+          character: [Object],
+          bit: [Object],
+          interval: [Object],
+          'time without time zone': [Object],
+          'time with time zone': [Object],
+          'timestamp without time zone': [Object],
+          'timestamp with time zone': [Object]
+        },
+        maxAliasLength: 63,
+        connection: [Circular],
+        options: {
+          type: 'postgres',
+          host: 'localhost',
+          port: '5432',
+          username: 'postgres',
+          password: 'docker',
+          database: 'gostack_desafio09_tests',
+          entities: [Array],
+          migrations: [Array],
+          cli: [Object],
+          name: 'test-connection'
+        },
+        postgres: PG {
+          defaults: [Object],
+          Client: [Function],
+          Query: [Function: Query],
+          Pool: [Function: BoundPool],
+          _pools: [],
+          Connection: [Function: Connection],
+          types: [Object]
+        },
+        master: BoundPool {
+          _events: [Object: null prototype],
+          _eventsCount: 1,
+          _maxListeners: undefined,
+          options: [Object],
+          log: [Function],
+          Client: [Function],
+          Promise: [Function: Promise],
+          _clients: [Array],
+          _idle: [Array],
+          _pendingQueue: [],
+          _endCallback: undefined,
+          ending: false,
+          ended: false,
+          [Symbol(kCapture)]: false
+        },
+        database: 'gostack_desafio09_tests'
+      },
+      manager: EntityManager {
+        repositories: [],
+        plainObjectToEntityTransformer: PlainObjectToNewEntityTransformer {},
+        connection: [Circular]
+      },
+      namingStrategy: DefaultNamingStrategy {},
+      queryResultCache: undefined,
+      relationLoader: RelationLoader { connection: [Circular] },
+      relationIdLoader: RelationIdLoader { connection: [Circular] },
+      isConnected: true
+    }
+
+      at src/__tests__/App.spec.ts:17:15
+
+  console.log
+    [ { id: '8e75acf2-17ab-4d8a-89b7-55ab973213c0', quantity: 5 } ]
+
+      at CreateOrderService.<anonymous> (src/modules/orders/services/CreateOrderService.ts:42:13)
+
+  console.log
+    [
+      Product {
+        id: '8e75acf2-17ab-4d8a-89b7-55ab973213c0',
+        name: 'Produto 01',
+        price: 500,
+        quantity: 50,
+        created_at: 2020-07-04T03:19:53.559Z,
+        updated_at: 2020-07-04T03:19:53.559Z
+      }
+    ]
+
+      at CreateOrderService.<anonymous> (src/modules/orders/services/CreateOrderService.ts:46:13)
+
+  console.log
+    [ { id: '8e75acf2-17ab-4d8a-89b7-55ab973213c0', quantity: 45 } ]
+
+      at CreateOrderService.<anonymous> (src/modules/orders/services/CreateOrderService.ts:79:13)
+
+  console.log
+    [
+      {
+        product_id: '8e75acf2-17ab-4d8a-89b7-55ab973213c0',
+        price: 500,
+        quantity: 5
+      }
+    ]
+
+      at CreateOrderService.<anonymous> (src/modules/orders/services/CreateOrderService.ts:81:13)
+
+  console.log
+    Customer {
+      id: '0c56a665-d658-468f-947e-6bb6ee564c55',
+      name: 'Rocketseat',
+      email: 'oi@rocketseat.com.br',
+      created_at: 2020-07-04T03:19:53.569Z,
+      updated_at: 2020-07-04T03:19:53.569Z
+    }
+
+      at CreateOrderService.<anonymous> (src/modules/orders/services/CreateOrderService.ts:85:13)
+
+  console.log
+    Customer {
+      id: '0c56a665-d658-468f-947e-6bb6ee564c55',
+      name: 'Rocketseat',
+      email: 'oi@rocketseat.com.br',
+      created_at: 2020-07-04T03:19:53.569Z,
+      updated_at: 2020-07-04T03:19:53.569Z
+    }
+
+      at OrdersRepository.<anonymous> (src/modules/orders/infra/typeorm/repositories/OrdersRepository.ts:25:13)
+
+  console.log
+    Customer {
+      id: '0c56a665-d658-468f-947e-6bb6ee564c55',
+      name: 'Rocketseat',
+      email: 'oi@rocketseat.com.br',
+      created_at: 2020-07-04T03:19:53.569Z,
+      updated_at: 2020-07-04T03:19:53.569Z
+    }
+
+      at OrdersRepository.<anonymous> (src/modules/orders/infra/typeorm/repositories/OrdersRepository.ts:27:13)
+
+  console.log
+    Order {
+      customer_id: '0c56a665-d658-468f-947e-6bb6ee564c55',
+      order_products: []
+    }
+
+      at OrdersRepository.<anonymous> (src/modules/orders/infra/typeorm/repositories/OrdersRepository.ts:34:13)
+
+  console.log
+    QueryFailedError: insert or update on table "orders" violates foreign key constraint "CustomerOrdersSeparete"
+        at new QueryFailedError (/home/lucas/bootcamp-atualizacao/challenge09/src/error/QueryFailedError.ts:9:9)
+        at Query.<anonymous> (/home/lucas/bootcamp-atualizacao/challenge09/src/driver/postgres/PostgresQueryRunner.ts:178:30)
+        at Query.handleError (/home/lucas/bootcamp-atualizacao/challenge09/node_modules/pg/lib/query.js:146:19)
+        at Connection.connectedErrorMessageHandler (/home/lucas/bootcamp-atualizacao/challenge09/node_modules/pg/lib/client.js:236:17)
+        at Connection.emit (events.js:311:20)
+        at Socket.<anonymous> (/home/lucas/bootcamp-atualizacao/challenge09/node_modules/pg/lib/connection.js:121:12)
+        at Socket.emit (events.js:311:20)
+        at addChunk (_stream_readable.js:294:12)
+        at readableAddChunk (_stream_readable.js:275:11)
+        at Socket.Readable.push (_stream_readable.js:209:10) {
+      message: 'insert or update on table "orders" violates foreign key constraint "CustomerOrdersSeparete"',
+      name: 'QueryFailedError',
+      length: 295,
+      severity: 'ERROR',
+      code: '23503',
+      detail: 'Key (customer_id)=(0c56a665-d658-468f-947e-6bb6ee564c55) is not present in table "customers".',
+      hint: undefined,
+      position: undefined,
+      internalPosition: undefined,
+      internalQuery: undefined,
+      where: undefined,
+      schema: 'public',
+      table: 'orders',
+      column: undefined,
+      dataType: undefined,
+      constraint: 'CustomerOrdersSeparete',
+      file: 'ri_triggers.c',
+      line: '2474',
+      routine: 'ri_ReportViolation',
+      query: 'INSERT INTO "orders"("id", "customer_id", "created_at", "updated_at") VALUES (DEFAULT, $1, DEFAULT, DEFAULT) RETURNING "id", "created_at", "updated_at"',
+      parameters: [ '0c56a665-d658-468f-947e-6bb6ee564c55' ]
+    }
+
+      at OrdersRepository.<anonymous> (src/modules/orders/infra/typeorm/repositories/OrdersRepository.ts:39:15)
+
+  console.log
+    Order {
+      customer_id: '0c56a665-d658-468f-947e-6bb6ee564c55',
+      order_products: []
+    }
+
+      at OrdersRepository.<anonymous> (src/modules/orders/infra/typeorm/repositories/OrdersRepository.ts:42:13)
+
+  console.log
+    [
+      OrdersProducts {
+        product_id: '8e75acf2-17ab-4d8a-89b7-55ab973213c0',
+        price: 500,
+        quantity: 5
+      }
+    ]
+
+      at OrdersRepository.<anonymous> (src/modules/orders/infra/typeorm/repositories/OrdersRepository.ts:54:13)
+
+  console.log
+    Order {
+      customer_id: '0c56a665-d658-468f-947e-6bb6ee564c55',
+      order_products: [
+        OrdersProducts {
+          product_id: '8e75acf2-17ab-4d8a-89b7-55ab973213c0',
+          price: 500,
+          quantity: 5
+        }
+      ]
+    }
+
+      at OrdersRepository.<anonymous> (src/modules/orders/infra/typeorm/repositories/OrdersRepository.ts:58:13)
+
+  console.log
+    insert or update on table "orders" violates foreign key constraint "CustomerOrdersSeparete"
+
+      at OrdersRepository.<anonymous> (src/modules/orders/infra/typeorm/repositories/OrdersRepository.ts:62:15)
+
+  console.log
+    Order {
+      customer_id: '0c56a665-d658-468f-947e-6bb6ee564c55',
+      order_products: [
+        OrdersProducts {
+          product_id: '8e75acf2-17ab-4d8a-89b7-55ab973213c0',
+          price: 500,
+          quantity: 5
+        }
+      ]
+    }
+
+      at OrdersRepository.<anonymous> (src/modules/orders/infra/typeorm/repositories/OrdersRepository.ts:64:13)
+
+  console.log
+    Order {
+      customer_id: '0c56a665-d658-468f-947e-6bb6ee564c55',
+      order_products: [
+        OrdersProducts {
+          product_id: '8e75acf2-17ab-4d8a-89b7-55ab973213c0',
+          price: 500,
+          quantity: 5
+        }
+      ]
+    }
+
+      at CreateOrderService.<anonymous> (src/modules/orders/services/CreateOrderService.ts:96:13)
+
+  console.log
+    [ { id: '6a1922c8-af6e-470e-9a34-621cb0643911' } ]
+
+      at CreateOrderService.<anonymous> (src/modules/orders/services/CreateOrderService.ts:42:13)
+
+  console.log
+    []
+
+      at CreateOrderService.<anonymous> (src/modules/orders/services/CreateOrderService.ts:46:13)
+
+  console.log
+    []
+
+      at CreateOrderService.<anonymous> (src/modules/orders/services/CreateOrderService.ts:79:13)
+
+  console.log
+    []
+
+      at CreateOrderService.<anonymous> (src/modules/orders/services/CreateOrderService.ts:81:13)
+
+  console.log
+    undefined
+
+      at CreateOrderService.<anonymous> (src/modules/orders/services/CreateOrderService.ts:85:13)
+
+  console.log
+    [ { id: 'aa57369f-8f4e-4c8c-9e1a-9bac52fea5e4', quantity: 500 } ]
+
+      at CreateOrderService.<anonymous> (src/modules/orders/services/CreateOrderService.ts:42:13)
+
+  console.log
+    [
+      Product {
+        id: 'aa57369f-8f4e-4c8c-9e1a-9bac52fea5e4',
+        name: 'Produto 01',
+        price: 500,
+        quantity: 50,
+        created_at: 2020-07-04T03:19:53.746Z,
+        updated_at: 2020-07-04T03:19:53.746Z
+      }
+    ]
+
+      at CreateOrderService.<anonymous> (src/modules/orders/services/CreateOrderService.ts:46:13)
+
+  console.log
+    [ { id: 'd0972413-1c3e-4c00-a1aa-94b5244cd863', quantity: 5 } ]
+
+      at CreateOrderService.<anonymous> (src/modules/orders/services/CreateOrderService.ts:42:13)
+
+  console.log
+    [
+      Product {
+        id: 'd0972413-1c3e-4c00-a1aa-94b5244cd863',
+        name: 'Produto 01',
+        price: 500,
+        quantity: 50,
+        created_at: 2020-07-04T03:19:53.751Z,
+        updated_at: 2020-07-04T03:19:53.751Z
+      }
+    ]
+
+      at CreateOrderService.<anonymous> (src/modules/orders/services/CreateOrderService.ts:46:13)
+
+  console.log
+    [ { id: 'd0972413-1c3e-4c00-a1aa-94b5244cd863', quantity: 45 } ]
+
+      at CreateOrderService.<anonymous> (src/modules/orders/services/CreateOrderService.ts:79:13)
+
+  console.log
+    [
+      {
+        product_id: 'd0972413-1c3e-4c00-a1aa-94b5244cd863',
+        price: 500,
+        quantity: 5
+      }
+    ]
+
+      at CreateOrderService.<anonymous> (src/modules/orders/services/CreateOrderService.ts:81:13)
+
+  console.log
+    Customer {
+      id: 'aa8d0dc3-7faf-4bed-8fa4-d478610ff341',
+      name: 'Rocketseat',
+      email: 'oi@rocketseat.com.br',
+      created_at: 2020-07-04T03:19:53.730Z,
+      updated_at: 2020-07-04T03:19:53.730Z
+    }
+
+      at CreateOrderService.<anonymous> (src/modules/orders/services/CreateOrderService.ts:85:13)
+
+  console.log
+    undefined
+
+      at OrdersRepository.<anonymous> (src/modules/orders/infra/typeorm/repositories/OrdersRepository.ts:25:13)
+
+  console.log
+    Customer {
+      id: 'aa8d0dc3-7faf-4bed-8fa4-d478610ff341',
+      name: 'Rocketseat',
+      email: 'oi@rocketseat.com.br',
+      created_at: 2020-07-04T03:19:53.730Z,
+      updated_at: 2020-07-04T03:19:53.730Z
+    }
+
+      at OrdersRepository.<anonymous> (src/modules/orders/infra/typeorm/repositories/OrdersRepository.ts:27:13)
+
+  console.log
+    Order {
+      customer_id: 'aa8d0dc3-7faf-4bed-8fa4-d478610ff341',
+      order_products: []
+    }
+
+      at OrdersRepository.<anonymous> (src/modules/orders/infra/typeorm/repositories/OrdersRepository.ts:34:13)
+
+  console.log
+    QueryFailedError: insert or update on table "orders" violates foreign key constraint "CustomerOrdersSeparete"
+        at new QueryFailedError (/home/lucas/bootcamp-atualizacao/challenge09/src/error/QueryFailedError.ts:9:9)
+        at Query.<anonymous> (/home/lucas/bootcamp-atualizacao/challenge09/src/driver/postgres/PostgresQueryRunner.ts:178:30)
+        at Query.handleError (/home/lucas/bootcamp-atualizacao/challenge09/node_modules/pg/lib/query.js:146:19)
+        at Connection.connectedErrorMessageHandler (/home/lucas/bootcamp-atualizacao/challenge09/node_modules/pg/lib/client.js:236:17)
+        at Connection.emit (events.js:311:20)
+        at Socket.<anonymous> (/home/lucas/bootcamp-atualizacao/challenge09/node_modules/pg/lib/connection.js:121:12)
+        at Socket.emit (events.js:311:20)
+        at addChunk (_stream_readable.js:294:12)
+        at readableAddChunk (_stream_readable.js:275:11)
+        at Socket.Readable.push (_stream_readable.js:209:10) {
+      message: 'insert or update on table "orders" violates foreign key constraint "CustomerOrdersSeparete"',
+      name: 'QueryFailedError',
+      length: 295,
+      severity: 'ERROR',
+      code: '23503',
+      detail: 'Key (customer_id)=(aa8d0dc3-7faf-4bed-8fa4-d478610ff341) is not present in table "customers".',
+      hint: undefined,
+      position: undefined,
+      internalPosition: undefined,
+      internalQuery: undefined,
+      where: undefined,
+      schema: 'public',
+      table: 'orders',
+      column: undefined,
+      dataType: undefined,
+      constraint: 'CustomerOrdersSeparete',
+      file: 'ri_triggers.c',
+      line: '2474',
+      routine: 'ri_ReportViolation',
+      query: 'INSERT INTO "orders"("id", "customer_id", "created_at", "updated_at") VALUES (DEFAULT, $1, DEFAULT, DEFAULT) RETURNING "id", "created_at", "updated_at"',
+      parameters: [ 'aa8d0dc3-7faf-4bed-8fa4-d478610ff341' ]
+    }
+
+      at OrdersRepository.<anonymous> (src/modules/orders/infra/typeorm/repositories/OrdersRepository.ts:39:15)
+
+  console.log
+    Order {
+      customer_id: 'aa8d0dc3-7faf-4bed-8fa4-d478610ff341',
+      order_products: []
+    }
+
+      at OrdersRepository.<anonymous> (src/modules/orders/infra/typeorm/repositories/OrdersRepository.ts:42:13)
+
+  console.log
+    [
+      OrdersProducts {
+        product_id: 'd0972413-1c3e-4c00-a1aa-94b5244cd863',
+        price: 500,
+        quantity: 5
+      }
+    ]
+
+      at OrdersRepository.<anonymous> (src/modules/orders/infra/typeorm/repositories/OrdersRepository.ts:54:13)
+
+  console.log
+    Order {
+      customer_id: 'aa8d0dc3-7faf-4bed-8fa4-d478610ff341',
+      order_products: [
+        OrdersProducts {
+          product_id: 'd0972413-1c3e-4c00-a1aa-94b5244cd863',
+          price: 500,
+          quantity: 5
+        }
+      ]
+    }
+
+      at OrdersRepository.<anonymous> (src/modules/orders/infra/typeorm/repositories/OrdersRepository.ts:58:13)
+
+  console.log
+    insert or update on table "orders" violates foreign key constraint "CustomerOrdersSeparete"
+
+      at OrdersRepository.<anonymous> (src/modules/orders/infra/typeorm/repositories/OrdersRepository.ts:62:15)
+
+  console.log
+    Order {
+      customer_id: 'aa8d0dc3-7faf-4bed-8fa4-d478610ff341',
+      order_products: [
+        OrdersProducts {
+          product_id: 'd0972413-1c3e-4c00-a1aa-94b5244cd863',
+          price: 500,
+          quantity: 5
+        }
+      ]
+    }
+
+      at OrdersRepository.<anonymous> (src/modules/orders/infra/typeorm/repositories/OrdersRepository.ts:64:13)
+
+  console.log
+    Order {
+      customer_id: 'aa8d0dc3-7faf-4bed-8fa4-d478610ff341',
+      order_products: [
+        OrdersProducts {
+          product_id: 'd0972413-1c3e-4c00-a1aa-94b5244cd863',
+          price: 500,
+          quantity: 5
+        }
+      ]
+    }
+
+      at CreateOrderService.<anonymous> (src/modules/orders/services/CreateOrderService.ts:96:13)
+
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
